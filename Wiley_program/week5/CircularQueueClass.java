@@ -28,6 +28,7 @@ class CircularQueue{
 		{
 			rear=0;
 			cqueArr[rear]=num;
+			//System.out.println(cqueArr[rear]);
 		}
 		else {
 			rear=rear+1;
@@ -57,8 +58,6 @@ class CircularQueue{
 		}
 		return ret;
 	}
-		
-	
 	void display()
 	{
 		if(front==-1)
@@ -78,7 +77,7 @@ class CircularQueue{
 			{
 				System.out.print(cqueArr[i]+"->");
 			}
-			for(int i=0;i<rear;i++)
+			for(int i=0;i<=rear;i++)
 			{
 				System.out.println(cqueArr[i]+"->");
 			}
@@ -108,7 +107,7 @@ public class CircularQueueClass {
 		System.out.println(ans+" removed");
 		cq.display();
 		cq.enqueue(8);
+		System.out.println();
 		cq.display();
-		
 	}
 }
